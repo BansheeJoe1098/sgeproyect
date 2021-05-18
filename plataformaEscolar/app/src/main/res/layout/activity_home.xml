@@ -24,6 +24,14 @@
         android:text="@string/horario"
         android:layout_marginBottom="40dp"
         android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/Reinscrpcion"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:text="Reinscripcion" />
+
 
     <Button
         android:id="@+id/reticula"
