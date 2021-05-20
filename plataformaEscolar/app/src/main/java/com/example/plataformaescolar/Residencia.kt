@@ -15,8 +15,8 @@ class Residencia : AppCompatActivity() {
         setContentView(binding.root)
 
         var usuario = intent.getStringExtra("usuario")
-         val jsonUsuario = JSONObject(usuario)
-         val jsonUsuarioEdit = jsonUsuario
+        val jsonUsuario = JSONObject(usuario)
+     //    val jsonUsuarioEdit = jsonUsuario
 
        // binding.numeroControlR.setText(jsonUsuario.getString("noControl"))
        // binding.nombreR.setText(jsonUsuario.getString("nombre"))

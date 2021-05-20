@@ -11,8 +11,9 @@ class Reinscripcion : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding =ActivityReinscripcionBinding.inflate(layoutInflater)
+        binding = ActivityReinscripcionBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         var stringUsuario = intent.getStringExtra("usuario")
 
         binding.btnEleccion.setOnClickListener {
