@@ -26,11 +26,11 @@ class Residencia : AppCompatActivity() {
         binding.contrasenaR.setText(jsonUsuario.getString("contrasena"))
 
         binding.btnRegistro.setOnClickListener {
-
+                
         }
 
         binding.btnRegresar.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, Reinscripcion::class.java)
             intent.putExtra("usuario", jsonUsuarioEdit.toString())
             startActivity(intent)
             finish()
