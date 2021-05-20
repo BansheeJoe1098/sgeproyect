@@ -15,15 +15,14 @@ class Residencia : AppCompatActivity() {
         setContentView(binding.root)
 
         var usuario = intent.getStringExtra("usuario")
-        val jsonUsuario = JSONObject(usuario)
-        val jsonUsuarioEdit = jsonUsuario
-        println(jsonUsuario)
+         val jsonUsuario = JSONObject(usuario)
+         val jsonUsuarioEdit = jsonUsuario
 
-        binding.numeroControlR.setText(jsonUsuario.getString("noControl"))
-        binding.nombreR.setText(jsonUsuario.getString("nombre"))
-        binding.carreraR.setText(jsonUsuario.getString("carrera"))
-        var semestre = binding.semestreR.setText(jsonUsuario.getString("semestre"))
-        binding.contrasenaR.setText(jsonUsuario.getString("contrasena"))
+       // binding.numeroControlR.setText(jsonUsuario.getString("noControl"))
+       // binding.nombreR.setText(jsonUsuario.getString("nombre"))
+        //binding.carreraR.setText(jsonUsuario.getString("carrera"))
+       // binding.semestreR.setText(jsonUsuario.getString("semestre"))
+       // binding.contrasenaR.setText(jsonUsuario.getString("contrasena"))
 
         binding.btnRegistro.setOnClickListener {
                 
@@ -31,7 +30,6 @@ class Residencia : AppCompatActivity() {
 
         binding.btnRegresar.setOnClickListener {
             val intent = Intent(this, Reinscripcion::class.java)
-            intent.putExtra("usuario", jsonUsuarioEdit.toString())
             startActivity(intent)
             finish()
         }

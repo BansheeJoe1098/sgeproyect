@@ -47,6 +47,10 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        binding.Reinscrpcion.setOnClickListener {
+            val intent = Intent(this,Reinscripcion::class.java)
+            startActivity(intent)
+        }
 
     }
 
