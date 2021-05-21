@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">School Platform</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Plataforma Escolar</string>
 
     <string name="jsonUsuarios">
         {
@@ -17,6 +17,21 @@
                     "carrera":"Sistemas",
                     "semestre":5,
                     "contrasena":"12345"
+                }
+            ]
+        }
+    </string>
+
+    <string name="jsonverano">
+        {
+        "semestre4 : [
+                {
+                "nombre" : "Programacion 2"
+                }
+            ],
+         "semestre6 : [
+                {
+                "nombre" : "Programacion Web"
                 }
             ]
         }
@@ -257,6 +272,7 @@
             ]
         }
     </string>
+
 
     <string name="noControl">Control number</string>
     <string name="contrasena">Password</string>

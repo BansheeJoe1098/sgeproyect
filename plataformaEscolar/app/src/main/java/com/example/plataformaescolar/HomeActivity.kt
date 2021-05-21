@@ -51,7 +51,7 @@ class HomeActivity : AppCompatActivity() {
         binding.Reinscrpcion.setOnClickListener {
             val intent = Intent(this,Reinscripcion::class.java)
             intent.putExtra("usuario", stringUsuario)
-            println(" u2 " +stringUsuario)
+           // println(" u2 " +stringUsuario)
             startActivity(intent)
         }
 
