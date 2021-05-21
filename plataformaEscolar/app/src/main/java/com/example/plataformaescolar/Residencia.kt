@@ -24,8 +24,7 @@ class Residencia : AppCompatActivity() {
         val jsonUsuario = JSONObject(usuario)
         val jsonUsuarioEdit = jsonUsuario
 
-        val Proyecto:String = ProyectoR.text.toString()
-        val Lugar:String = LugarR.text.toString()
+
 
 
 
@@ -37,10 +36,13 @@ class Residencia : AppCompatActivity() {
 
 
         binding.btnRegistro.setOnClickListener {
-            println("Proyecto"  +Proyecto)
-            println("Lugar" +Lugar)
-            if (Proyecto == null || Lugar == null){
+            val Proyecto:String = ProyectoR.text.toString()
+            val Lugar:String = LugarR.text.toString()
+            if (Proyecto == "" || Lugar == ""){
                 Toast.makeText(this,"Hay campos vacios",Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this,"Se registro exitosamente",Toast.LENGTH_SHORT).show()
             }
 
         }
