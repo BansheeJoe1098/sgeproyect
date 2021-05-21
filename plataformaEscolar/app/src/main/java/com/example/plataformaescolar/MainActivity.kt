@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
                     encontrado = true
                     val intent = Intent(this, HomeActivity::class.java)
                     intent.putExtra("usuario", jsonUsuario.toString())
+                    println("Usario" +jsonUsuario)
                     startActivity(intent)
                     finish()
                 }

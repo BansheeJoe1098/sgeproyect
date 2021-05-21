@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:text="Ingrese"
         android:textStyle="bold"
         android:layout_marginBottom="35dp"
         android:textSize="24dp"
@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/noControl"/>
+        android:text="Numero de Control"/>
     <EditText
         android:id="@+id/noControlLogin"
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/contrasena"/>
+        android:text="Contraseña"/>
     <EditText
         android:id="@+id/contrasenaLogin"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:id="@+id/redirigirSignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/linkSignin"
+        android:text="No tienes una cuenta? Crear Una"
         android:layout_marginBottom="20dp"
         android:linksClickable="true"/>
 
@@ -52,7 +52,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="@string/btnlogin"
+        android:text="Ingrese"
         android:layout_gravity="center"/>
 
 </LinearLayout>

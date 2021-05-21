@@ -17,7 +17,8 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var stringUsuario = intent.getStringExtra("usuario")
-        //println("*** USUARIO: ")
+        println(" u "  +stringUsuario)
+        //println( "*** USUARIO: ")
         //println(stringUsuario)
 
         binding.calificaciones.setOnClickListener {
@@ -50,6 +51,12 @@ class HomeActivity : AppCompatActivity() {
             //si cierra sesion, implementar los cambios en datos personales
             intent.putExtra("usuario", stringUsuario)
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        binding.Reinscrpcion.setOnClickListener {
+            val intent = Intent(this,Reinscripcion::class.java)
+            intent.putExtra("usuario", stringUsuario)
+           // println(" u2 " +stringUsuario)
             startActivity(intent)
         }
 
