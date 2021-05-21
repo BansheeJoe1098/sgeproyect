@@ -19,14 +19,9 @@ class Residencia : AppCompatActivity() {
         binding = ActivityResidenciaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         var usuario = intent.getStringExtra("usuario")
         val jsonUsuario = JSONObject(usuario)
         val jsonUsuarioEdit = jsonUsuario
-
-
-
-
 
         binding.numeroControlR.setText(jsonUsuario.getString("noControl"))
         binding.nombreR.setText(jsonUsuario.getString("nombre"))
@@ -36,16 +31,20 @@ class Residencia : AppCompatActivity() {
 
 
         binding.btnRegistro.setOnClickListener {
-            val Proyecto:String = ProyectoR.text.toString()
-            val Lugar:String = LugarR.text.toString()
-            if (Proyecto == "" || Lugar == ""){
-            if (Proyecto == null || Lugar == null){
-                Toast.makeText(this,"Hay campos vacios",Toast.LENGTH_SHORT).show()
-            }
-            else{
-                Toast.makeText(this,"Se registro exitosamente",Toast.LENGTH_SHORT).show()
-            }
+            val Proyecto: String = ProyectoR.text.toString()
+            val Lugar: String = LugarR.text.toString()
+            val Semestre: String = semestreR.text.toString()
+            val NSem : Int = Semestre.toInt()
 
+            if (Proyecto == "" || Lugar == "") {
+                Toast.makeText(this, "Hay campos vacios", Toast.LENGTH_SHORT).show()
+
+            } else {
+                if (NSem >= 9){
+                    Toast.makeText(this, "Se registro exitosamente", Toast.LENGTH_SHORT).show()
+                }
+                Toast.makeText(this, "Ustes no es de 9vo", Toast.LENGTH_SHORT).show()
+            }
         }
 
         binding.btnRegresar.setOnClickListener {
