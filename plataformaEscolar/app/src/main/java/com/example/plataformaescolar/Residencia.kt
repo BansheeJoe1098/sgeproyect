@@ -36,13 +36,10 @@ class Residencia : AppCompatActivity() {
 
 
         binding.btnRegistro.setOnClickListener {
-<<<<<<< Updated upstream
             val Proyecto:String = ProyectoR.text.toString()
             val Lugar:String = LugarR.text.toString()
             if (Proyecto == "" || Lugar == ""){
-=======
             if (Proyecto == null || Lugar == null){
->>>>>>> Stashed changes
                 Toast.makeText(this,"Hay campos vacios",Toast.LENGTH_SHORT).show()
             }
             else{
