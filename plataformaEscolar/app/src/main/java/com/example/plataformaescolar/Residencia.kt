@@ -16,13 +16,13 @@ class Residencia : AppCompatActivity() {
 
         var usuario = intent.getStringExtra("usuario")
         val jsonUsuario = JSONObject(usuario)
-     //    val jsonUsuarioEdit = jsonUsuario
+        val jsonUsuarioEdit = jsonUsuario
 
-       // binding.numeroControlR.setText(jsonUsuario.getString("noControl"))
-       // binding.nombreR.setText(jsonUsuario.getString("nombre"))
-        //binding.carreraR.setText(jsonUsuario.getString("carrera"))
-       // binding.semestreR.setText(jsonUsuario.getString("semestre"))
-       // binding.contrasenaR.setText(jsonUsuario.getString("contrasena"))
+       binding.numeroControlR.setText(jsonUsuario.getString("noControl"))
+       binding.nombreR.setText(jsonUsuario.getString("nombre"))
+       binding.carreraR.setText(jsonUsuario.getString("carrera"))
+       binding.semestreR.setText(jsonUsuario.getString("semestre"))
+
 
         binding.btnRegistro.setOnClickListener {
                 
