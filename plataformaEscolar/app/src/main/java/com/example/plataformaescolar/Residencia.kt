@@ -7,8 +7,10 @@ import android.widget.EditText
 import android.widget.Toast
 import org.json.JSONObject
 import com.example.plataformaescolar.databinding.ActivityResidenciaBinding
+import kotlinx.android.synthetic.main.activity_residencia.*
 
 class Residencia : AppCompatActivity() {
+
     private lateinit var binding:ActivityResidenciaBinding
 
 
@@ -21,7 +23,9 @@ class Residencia : AppCompatActivity() {
         var usuario = intent.getStringExtra("usuario")
         val jsonUsuario = JSONObject(usuario)
         val jsonUsuarioEdit = jsonUsuario
-       // val Proyecto = intent.getStringExtra("ProyectoR")
+
+        val Proyecto:String = ProyectoR.text.toString()
+        val Lugar:String = LugarR.text.toString()
 
 
 
@@ -33,10 +37,12 @@ class Residencia : AppCompatActivity() {
 
 
         binding.btnRegistro.setOnClickListener {
-            Toast.makeText(this,"Se confirmo su Residencia",Toast.LENGTH_SHORT).show()
-               // if (Proyecto.isEmpty()){
+            println("Proyecto"  +Proyecto)
+            println("Lugar" +Lugar)
+            if (Proyecto == null || Lugar == null){
+                Toast.makeText(this,"Hay campos vacios",Toast.LENGTH_SHORT).show()
+            }
 
-               // }
         }
 
         binding.btnRegresar.setOnClickListener {
