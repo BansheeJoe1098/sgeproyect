@@ -30,6 +30,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.Reinscrpcion.setOnClickListener {
+            val intent = Intent(this, Reinscripcion::class.java)
+            startActivity(intent)
+        }
+
         binding.reticula.setOnClickListener {
             val intent = Intent(this, ReticulaActivity::class.java)
             startActivity(intent)
