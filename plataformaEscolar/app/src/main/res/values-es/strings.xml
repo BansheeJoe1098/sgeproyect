@@ -6,14 +6,14 @@
         {
             "usuarios" : [
                 {
-                    "nombre":"'Katherine Arzate'",
-                    "noControl": "18121684",
+                    "nombre":"'Oscar Tera'",
+                    "noControl": "18120234",
                     "carrera": "TICS",
                     "semestre": 6,
                     "contrasena": "123"
                 },{
-                      "nombre":"'Mauricio Gutierrez'",
-                    "noControl": "18121600",
+                      "nombre":"'Joe Miguel Rodriguez'",
+                    "noControl": "18120232",
                     "carrera": "Sistemas",
                     "semestre": 5,
                     "contrasena": "12345"

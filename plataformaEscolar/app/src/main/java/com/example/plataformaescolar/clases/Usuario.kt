@@ -8,11 +8,11 @@ data class Usuario(
     var contrasena: String? = null
 ){
     //instancia
-    //val usuario1 = Usuario("Katherine","18121600", "TICS","6","123")
+
     companion object{
         var json : String =
-            "{'nombre': 'Katherine Arzate'," +
-                    "'noControl': '18121600'," +
+            "{'nombre': 'Oscar Tera'," +
+                    "'noControl': '18120234'," +
                     "'carrera': 'TICS'," +
                     "'semestre': '6'," +
                     "'contrasena': '123'}"

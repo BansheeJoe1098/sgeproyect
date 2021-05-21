@@ -15,6 +15,7 @@ class Reinscripcion : AppCompatActivity() {
         setContentView(binding.root)
 
         var stringUsuario = intent.getStringExtra("usuario")
+        println("u3 " +stringUsuario)
 
         binding.btnEleccion.setOnClickListener {
 
@@ -22,6 +23,7 @@ class Reinscripcion : AppCompatActivity() {
         binding.btnResidencia.setOnClickListener {
             val intent = Intent(this,Residencia::class.java)
             intent.putExtra("usuario", stringUsuario)
+            println("valor" +stringUsuario)
             startActivity(intent)
         }
     }
