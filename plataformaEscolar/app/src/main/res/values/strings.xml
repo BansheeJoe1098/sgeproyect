@@ -12,6 +12,13 @@
                     "contrasena":"123"
                 },
                 {
+                    "nombre":"'Juan Orozco'",
+                    "noControl":"18120222",
+                    "carrera":"TICS",
+                    "semestre":8,
+                    "contrasena":"1234"
+                },
+                {
                     "nombre":"'Joe Miguel Rodriguez '",
                     "noControl":"18120232",
                     "carrera":"Sistemas",
