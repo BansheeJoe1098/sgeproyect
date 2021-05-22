@@ -38,12 +38,11 @@ class Residencia : AppCompatActivity() {
 
             if (Proyecto == "" || Lugar == "") {
                 Toast.makeText(this, "Hay campos vacios", Toast.LENGTH_SHORT).show()
-
             } else {
                 if (NSem >= 9){
                     Toast.makeText(this, "Se registro exitosamente", Toast.LENGTH_SHORT).show()
                 }
-                Toast.makeText(this, "Ustes no es de 9vo", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Usted no es de 9vo", Toast.LENGTH_SHORT).show()
             }
         }
 
