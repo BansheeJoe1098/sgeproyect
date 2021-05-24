@@ -18,8 +18,12 @@ class Reinscripcion : AppCompatActivity() {
         println("u3 " +stringUsuario)
 
         binding.btnEleccion.setOnClickListener {
-
+            val intent = Intent(this,EleccionActivity::class.java)
+            intent.putExtra("usuario", stringUsuario)
+            startActivity(intent)
         }
+
+
         binding.btnResidencia.setOnClickListener {
             val intent = Intent(this,Residencia::class.java)
             intent.putExtra("usuario", stringUsuario)
